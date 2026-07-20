@@ -244,7 +244,7 @@ cat .claude/settings.json | grep -A2 "PreToolUse\|UserPromptSubmit\|PostToolUse"
 Test secrets scanning by pasting a fake credential into the prompt:
 
 ```
-Read this token: <EXAMPLE_AWS_ACCESS_KEY>
+Read this token: AKIA1234567890ABCDEF
 ```
 
 The UserPromptSubmit hook should block the prompt with a message like "Sonar detected secrets in prompt."
